@@ -3,6 +3,7 @@ pragma solidity ^0.6.11;
 
 import "../components/PerpetualTokens.sol";
 import "../../components/ERC721Receiver.sol";
+import "../../components/ERC1155Receiver.sol";
 import "../../components/Freezable.sol";
 import "../../components/KeyGetters.sol";
 import "../../components/Users.sol";
@@ -15,6 +16,7 @@ import "../../interfaces/SubContractor.sol";
 
 contract PerpetualTokensAndRamping is
     ERC721Receiver,
+    ERC1155Receiver,
     SubContractor,
     Freezable,
     MainGovernance,
@@ -37,6 +39,6 @@ contract PerpetualTokensAndRamping is
     }
 
     function identify() external pure override returns (string memory) {
-        return "StarkWare_PerpetualTokensAndRamping_2020_1";
+        return "StarkWare_PerpetualTokensAndRamping_2021_1";
     }
 }

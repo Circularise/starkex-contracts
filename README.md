@@ -1,5 +1,7 @@
 # StarkEx
 
+*** ETH Scaling 2021 hackathon edition by Circularise ***
+
 StarkEx is a STARK-powered scalability engine for crypto exchanges. StarkEx uses cryptographic
 proofs to attest to the validity of a batch of transactions (such as trades and transfers)
 and updates a commitment to the state of the exchange onchain.
